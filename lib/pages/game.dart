@@ -1,8 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
-import 'package:jogo_da_forca/main.dart';
-import 'package:jogo_da_forca/ui/button.dart';
+import '../my_app.dart';
 
 
 class SecondPage extends StatelessWidget {
