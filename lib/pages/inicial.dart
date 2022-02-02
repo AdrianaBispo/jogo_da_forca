@@ -25,12 +25,12 @@ class _HomePageState extends State<HomePage> {
     var size = MediaQuery.of(context).size;
     var screenHeight = ( size.height - appBarVar.preferredSize.height ) - MediaQuery.of(context).padding.top;
 
-    return Container(
+    return SizedBox(
       height: screenHeight * .7,
      
       child: const Center(
         child: Text(
-          'Jogo da Forca',
+          'Futura Imagem',
           style: TextStyle(
             fontWeight: FontWeight.normal,
             fontSize: 30.0,
@@ -42,14 +42,21 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _buildButton (){
-    return Container(
+    return SizedBox(
       height: 70,
-      //color: Colors.,
       child: Center(
 
-        child: SizedBox(
+        child: Container(
           width: 240,
           height: 50,
+          decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Color.fromARGB(1, 124,181,248),
+            Color.fromARGB(1, 148,135,253),
+          ],
+        )
+      ),
           child: TextButton(  
             child: const Text(
               'Jogar',
@@ -61,13 +68,13 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             style: TextButton.styleFrom(
-              backgroundColor:  Color(0xff2b73b9),
+              //backgroundColor: const Color(0xff2b73b9),
               minimumSize: const Size(120, 50),
               maximumSize: const Size(240, 50),
               alignment: Alignment.center,
 
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(3),
+                borderRadius: BorderRadius.circular(15),
               )
             ),//style
             onPressed: () {
@@ -87,7 +94,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffefeeee),
+      backgroundColor: const Color(0xFFF8F9FD),
       
       //appBar: appBarVar,
       body: Column(
