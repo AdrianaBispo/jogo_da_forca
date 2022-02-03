@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:jogo_da_forca/pages/game.dart';
+
+//routes
+import 'package:jogo_da_forca/utils/app_routes.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -47,9 +49,9 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         onPressed: () {
-          Navigator.push(
+          Navigator.pushNamed(//adciona essa tela a pilha de navegação
             context,
-            MaterialPageRoute(builder: (context) => const SecondPage()),
+            AppRoutes.GAME,
           );
         },
       ),
