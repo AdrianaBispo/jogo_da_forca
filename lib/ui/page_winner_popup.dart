@@ -11,7 +11,8 @@ void gameWinner(String word, context) {
           frase: 'Parabéns, ',
           word: 'Você acertou a palavra',
           color: const Color(0xff49d2a4),
-          pressed: Navigator.pushReplacementNamed(context, AppRoutes.HOME),
+          context: context,
+          route: Navigator.pushReplacementNamed(context, AppRoutes.HOME),
         );
       });
 }
