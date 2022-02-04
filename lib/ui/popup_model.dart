@@ -15,7 +15,7 @@ popUpModel(
       ),
     ),
     content: Text(
-      'A palavra era $word',
+      word,
       style: const TextStyle(
         fontFamily: 'Montserrat',
         fontWeight: FontWeight.w500,
