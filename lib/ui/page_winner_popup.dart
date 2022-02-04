@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:jogo_da_forca/ui/popup_model.dart';
 import 'package:jogo_da_forca/utils/app_routes.dart';
 
-void gameWinner(String word, context) {
-  showDialog(
+gameWinner(String word, context) {
+  return showDialog(
       context: context,
       barrierDismissible: false,
       builder: (BuildContext context) {
