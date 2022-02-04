@@ -38,10 +38,9 @@ class _SecondPageViewState extends State<SecondPageView> {
   List<dynamic> tro = [];
   List<String> o = ['__ '];
 
-  final List<String> entries = <String>['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v','x', 'w', 'y', 'z'];
-  
-  novoJogo(){
-    setState((){
+  final List<String> entries = alfabeto;
+  novoJogo() {
+    setState(() {
       palavra = banco[aleatorio.nextInt(banco.length - 1)];
       tiras = novo();
       vidas = 5;
