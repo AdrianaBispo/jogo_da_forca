@@ -4,14 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:jogo_da_forca/utils/app_routes.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-
   Widget _buildImagem(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     MediaQuery.of(context).padding.top;
@@ -26,30 +24,33 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _buildButton () {
+  Widget _buildButton() {
     var size = MediaQuery.of(context).size;
     return Container(
       width: size.width * .7,
       height: 55,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15),
-          gradient: const LinearGradient(
-            colors: [
-              Color.fromRGBO(124, 181, 248, 1),
-              Color.fromRGBO(148, 135, 253, 1),
-            ],
-          )),
+        borderRadius: BorderRadius.circular(15),
+        gradient: const LinearGradient(
+          colors: [
+            Color.fromRGBO(124, 181, 248, 1),
+            Color.fromRGBO(148, 135, 253, 1),
+          ],
+        ),
+      ),
       child: TextButton(
         child: const Text(
           'Jogar',
           style: TextStyle(
             fontFamily: 'Montserrat',
+            fontWeight: FontWeight.w500,
             fontSize: 22.0,
             color: Color(0xFFFFFFFF),
           ),
         ),
         onPressed: () {
-          Navigator.pushNamed(//adciona essa tela a pilha de navegação
+          Navigator.pushNamed(
+            //adciona essa tela a pilha de navegação
             context,
             AppRoutes.GAME,
           );
