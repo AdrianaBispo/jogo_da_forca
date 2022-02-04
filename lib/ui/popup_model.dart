@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:jogo_da_forca/utils/app_routes.dart';
 
-popUpModel(
-    {required String frase,
-    required String word,
-    required Color color,
-    required Future<Object?> pressed}) {
-  AlertDialog(
+popUpModel({
+  required String frase,
+  required String word,
+  required Color color,
+  required dynamic context,
+  required route,
+}) {
+ return  AlertDialog(
     title: Text(
       frase,
       style: TextStyle(
@@ -25,19 +28,23 @@ popUpModel(
     ),
     actions: <Widget>[
       TextButton(
-          style: TextButton.styleFrom(
-            backgroundColor: color,
+        style: TextButton.styleFrom(
+          backgroundColor: color,
+          shape: const CircleBorder(),
+        ),
+        child: const Text(
+          'x',
+          style: TextStyle(
+            fontFamily: 'Montserrat',
+            fontWeight: FontWeight.w500,
+            fontSize: 20.0,
+            color: Color(0XFFFFFFFF),
           ),
-          child: const Text(
-            'closer',
-            style: TextStyle(
-              fontFamily: 'Montserrat',
-              fontWeight: FontWeight.w500,
-              fontSize: 14.0,
-              color: Color(0XFFFFFFFF),
-            ),
-          ),
-          onPressed: () => pressed),
+        ),
+        onPressed: () {
+          Navigator.pushReplacementNamed(context, AppRoutes.HOME);
+        },
+      ),
     ],
   );
 }
