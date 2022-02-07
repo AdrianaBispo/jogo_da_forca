@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 //routes
 import 'package:jogo_da_forca/utils/app_routes.dart';
 
+//ads Mobile
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+
 class HomePage extends StatefulWidget {
 
   @override
@@ -63,13 +66,24 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF8F9FD),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Center(child: _buildImagem(context)),
-          Center(child: _buildButton())
-        ],
+      body: FutureBuilder<void>(
+        future: _initGoogleMobileAds(),
+        builder: (context, snapshot) {
+          return Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Center(child: _buildImagem(context)),
+              Center(child: _buildButton())
+            ],
+          );
+        }
       ),
     );
+  }
+
+  // COMPLETE: Change return type to Future<InitializationStatus>
+  Future<InitializationStatus> _initGoogleMobileAds() {
+    // TODO: Initialize Google Mobile Ads SDK
+    return MobileAds.instance.initialize();
   }
 }
