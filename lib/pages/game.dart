@@ -98,7 +98,7 @@ class _SecondPageViewState extends State<SecondPageView> {
     if (f == false) {
       vidas--;
       if (vidas == 0) {
-        gameOver(palavra, context);
+        await gameOver(palavra, context);
       }
     }
 
