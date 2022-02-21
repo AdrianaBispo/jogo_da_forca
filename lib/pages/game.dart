@@ -63,9 +63,10 @@ class _SecondPageViewState extends State<SecondPageView> {
 
 
   void _testando(String letra) {
-    bool n = dentro(g, letra);
+    //bool n = dentro(g, letra);
+    bool n = g.contains(letra);
     if (n == false) {
-      // se g não tiver letra
+      // se g não tiver letra que o usuario digitou
       for (int k = 0; k < palavra.length; k++) {
         if (letra == palavra[k]) {
           g.add(palavra[k]);
@@ -91,8 +92,9 @@ class _SecondPageViewState extends State<SecondPageView> {
       }
       tiras = tro.join('');
     } //if
-
-    bool f = dentro(letra, palavra);
+  print('Lista var g: $g');
+    //bool f = dentro(letra, palavra);
+  bool f = palavra.contains(letra);
     if (f == false) {
       vidas--;
       if (vidas == 0) {
@@ -103,7 +105,7 @@ class _SecondPageViewState extends State<SecondPageView> {
     if (g.length == palavra.length) {
       gameWinner(palavra, context);
     }
-  }
+  }// _testando
 
 
   String novo() {
