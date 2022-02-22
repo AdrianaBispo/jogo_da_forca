@@ -6,7 +6,7 @@ popUpModel({
   required String word,
   required Color color,
   required dynamic context,
-  required route,
+  //required route,
 }) {
  return  AlertDialog(
     title: Text(
