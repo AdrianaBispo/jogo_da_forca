@@ -63,7 +63,6 @@ class _SecondPageViewState extends State<SecondPageView> {
 
 
   void _testando(String letra) {
-    //bool n = dentro(g, letra);
     bool n = g.contains(letra);
     if (n == false) {
       // se g não tiver letra que o usuario digitou
@@ -92,13 +91,12 @@ class _SecondPageViewState extends State<SecondPageView> {
       }
       tiras = tro.join('');
     } //if
-  print('Lista var g: $g');
     //bool f = dentro(letra, palavra);
   bool f = palavra.contains(letra);
     if (f == false) {
       vidas--;
       if (vidas == 0) {
-        await gameOver(palavra, context);
+        gameOver(palavra, context);
       }
     }
 
