@@ -12,7 +12,6 @@ gameWinner(String word, context) {
         word: 'Você acertou a palavra',
         color: const Color(0xff49d2a4),
         context: context,
-        route: Navigator.pushReplacementNamed(context, AppRoutes.HOME),
       );
     },
   );
