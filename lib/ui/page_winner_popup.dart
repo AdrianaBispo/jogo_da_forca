@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:jogo_da_forca/ui/popup_model.dart';
-import 'package:jogo_da_forca/utils/app_routes.dart';
 
 gameWinner(String word, context) {
   return showDialog(
