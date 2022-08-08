@@ -22,11 +22,11 @@ Aplicativo de um jogo da forca no qual uma palavra é sorteada e o usuario vai s
 
 <h2 id='funcionalidade'>Funcionalidade</h2>
 
-<input type="checkbox" class="js-task-list-item-checkbox" disabled />Google Ads </br>
-<input type="checkbox" class="js-task-list-item-checkbox" disabled />Sorteia a palavra </br>
-<input type="checkbox" class="js-task-list-item-checkbox" disabled /> 5 chances</br>
-<input type="checkbox" class="js-task-list-item-checkbox" disabled /> Pop Up com o resultado final
-</br>
+- [X] Google Ads;
+- [X] Sorteia a palavra;
+- [X] 5 chances para o usuário;
+- [X] Pop Up com o resultado final.
+
 <!-- final funcionalidades -->
 <h2 id='linguagem'>Linguagens e Ferramentas</h2>
 
@@ -38,11 +38,14 @@ As seguintes ferramentas foram usadas na construção do projeto:
   </li>
   <li><img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"></li>
 </ul>
-<h2>ScreenShots</h2>
+<!-- final linguagens -->
+<h2 id="screenshot">ScreenShots</h2>
+
 <p align="center"> 
   <img src="screenshot/jogo_da_forca (1).png" width="250px">
   </p>
 
+    
 <p align="center"> 
   <img src="screenshot/jogo_da_forca (2).png" width="250px"/>
 </p>
@@ -62,7 +65,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <p align="center"> 
   <img src="screenshot/jogo_da_forca (6).png" width="250px"/>
 </p>
-
 
 <h2 id="autor">Autor</h2>
 
