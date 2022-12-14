@@ -71,7 +71,3 @@ As seguintes ferramentas foram usadas na construção do projeto:
   <p>Feito por Adriana Bispo. Entre em contato</p>
   <a href="mailto:adriana.bispo283@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
 
-<h2 id='licenca'>Licença</h2>
-Este projeto esta sobe a licença: 
-</br></br> <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
-
